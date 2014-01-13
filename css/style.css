@@ -275,3 +275,18 @@ transition: all 0.5s ease-in-out;
 -ms-transform: scale(1.5);
 transform: scale(1.5);
 }
+
+.max-woi {
+    padding: 20px;
+    color: #fff;
+    background: #FF4136;
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.tinggi-max {
+    max-height: 400px;
+    margin: 0 auto;
+    overflow:hidden;
+}

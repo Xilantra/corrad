@@ -293,11 +293,47 @@ CORRAD is 100% open source product running on PHP as the backbone language <stro
       </div>
     </div><!-- /.content-section-b -->
 
+    
+    <div class="content-section-c">
+      <div class="container">
+  
+            <div class="row">   
+          <div class="col-md-12">
+ 
+              <div id="carousel-generic" class="carousel slide tinggi-max" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-generic" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img class="slide-image" src="img/req0.jpg">
+                  </div>
+                  <div class="item">
+                    <img class="slide-image" src="img/req.jpg">
+                  </div>
+                  <div class="item">
+                    <img class="slide-image" src="img/req2.jpg">
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+        </div>             
+        </div>
+        </div>   
+        
     <div id="req" class="content-section-c">
       <div class="container">
   
         <div class="row">
-          <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+          <div id="kamon" class="col-md-12 max-woi">
              <div class="clearfix"></div>
             <h2 class="section-heading">System Requirements</h2>
             
@@ -348,39 +384,11 @@ CORRAD is 100% open source product running on PHP as the backbone language <stro
 
           </div>
           
-          
-          <div class="col-lg-5 col-sm-pull-6  col-sm-6">
- 
-              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img class="slide-image" src="img/req0.png">
-                  </div>
-                  <div class="item">
-                    <img class="slide-image" src="img/req.png">
-                  </div>
-                  <div class="item">
-                    <img class="slide-image" src="img/req2.png">
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-              </div>
-            </div>
  
         </div>
   
       </div><!-- /.container -->
-    </div><!-- /.content-section-a -->
+    </div><!-- /.content-section-c -->
 
     <div id="contact" class="banner">
       <div class="container">
@@ -427,7 +435,7 @@ CORRAD is 100% open source product running on PHP as the backbone language <stro
               $(function() {
               
               	$(window).scroll(function() {
-		$('#popup').each(function(){
+		$('#popup, #kamon').each(function(){
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
@@ -435,7 +443,9 @@ CORRAD is 100% open source product running on PHP as the backbone language <stro
 				$(this).addClass("slideExpandUp");
 			}
 		});
+
 		 
+		 		 		 
 		$('nav').each(function(){
 		var imagePos = $(this).offset().top;
 
